@@ -4,6 +4,7 @@ import {
   Workflow,
   Globe,
   Database,
+  Search,
   ArrowRight,
   MapPin,
   Phone,
@@ -22,32 +23,32 @@ export const Route = createFileRoute("/")({
     meta: [
       {
         title:
-          "Swiftertech Solutions — AI Automations, Web & ERP Solutions in Navi Mumbai",
+          "Swiftertech Solutions — AI Automations, Web, ERP & SEO in Navi Mumbai",
       },
       {
         name: "description",
         content:
-          "Swiftertech Solutions builds AI automations, AI & web solutions, and ERP systems for growing businesses in Sanpada, Navi Mumbai. Call +91 83697 16455 or email swiftertech@zohomail.in.",
+          "Swiftertech Solutions builds AI automations, AI & web solutions, ERP systems, and SEO optimization for growing businesses in Sanpada, Navi Mumbai. Call +91 83697 16455 or email swiftertech@zohomail.in.",
       },
       {
         name: "keywords",
         content:
-          "AI automation Navi Mumbai, web development Navi Mumbai, ERP solutions Mumbai, Swiftertech Solutions, business automation India",
+          "AI automation Navi Mumbai, web development Navi Mumbai, ERP solutions Mumbai, SEO services Navi Mumbai, Swiftertech Solutions, business automation India",
       },
-      { property: "og:title", content: "Swiftertech Solutions — AI, Web & ERP Solutions" },
+      { property: "og:title", content: "Swiftertech Solutions — AI, Web, ERP & SEO" },
       {
         property: "og:description",
         content:
-          "AI automations, AI & web solutions, and ERP systems from Navi Mumbai.",
+          "AI automations, AI & web solutions, ERP systems, and SEO optimization from Navi Mumbai.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "/" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "Swiftertech Solutions — AI, Web & ERP Solutions" },
+      { name: "twitter:title", content: "Swiftertech Solutions — AI, Web, ERP & SEO" },
       {
         name: "twitter:description",
         content:
-          "AI automations, AI & web solutions, and ERP systems from Navi Mumbai.",
+          "AI automations, AI & web solutions, ERP systems, and SEO optimization from Navi Mumbai.",
       },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -62,7 +63,7 @@ export const Route = createFileRoute("/")({
           url: "/",
           logo: logoAsset.url,
           description:
-            "Swiftertech Solutions builds AI automations, AI & web solutions, and ERP systems for growing businesses.",
+            "Swiftertech Solutions builds AI automations, AI & web solutions, ERP systems, and SEO optimization for growing businesses.",
           slogan: "Innovate • Integrate • Elevate",
           address: {
             "@type": "PostalAddress",
