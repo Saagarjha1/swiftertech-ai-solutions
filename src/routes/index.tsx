@@ -8,6 +8,7 @@ import {
   MapPin,
   Phone,
   Mail,
+  MessageCircle,
   Sparkles,
   Layers,
   Gauge,
@@ -344,6 +345,17 @@ function Index() {
                   +91 83697 16455
                 </a>
               </div>
+              <div className="flex items-center gap-3 text-primary-foreground/80">
+                <MessageCircle className="h-5 w-5 shrink-0 text-accent" />
+                <a
+                  href="https://wa.me/918369716455?text=Hi%20Swiftertech%2C%20I%20want%20to%20know%20more%20about%20your%20services."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition-colors hover:text-primary-foreground"
+                >
+                  Chat on WhatsApp
+                </a>
+              </div>
             </div>
           </div>
           <form
@@ -424,6 +436,17 @@ function Index() {
           </p>
         </div>
       </footer>
+
+      {/* Floating WhatsApp */}
+      <a
+        href="https://wa.me/918369716455?text=Hi%20Swiftertech%2C%20I%20want%20to%20know%20more%20about%20your%20services."
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Chat with us on WhatsApp"
+        className="fixed right-5 bottom-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-lg shadow-accent/30 transition-transform hover:scale-110"
+      >
+        <MessageCircle className="h-7 w-7" />
+      </a>
     </div>
   );
 }
