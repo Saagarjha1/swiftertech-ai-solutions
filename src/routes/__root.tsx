@@ -77,20 +77,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Swiftertech Solutions — AI, Web & ERP Solutions" },
-      {
-        name: "description",
-        content:
-          "Swiftertech Solutions delivers AI automations, AI & web solutions, and ERP systems from Navi Mumbai. Innovate. Integrate. Elevate.",
-      },
       { name: "author", content: "Swiftertech Solutions" },
-      { property: "og:title", content: "Swiftertech Solutions — AI, Web & ERP Solutions" },
-      {
-        property: "og:description",
-        content:
-          "AI automations, AI & web solutions, and ERP systems. Innovate. Integrate. Elevate.",
-      },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Swiftertech Solutions" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
     links: [
