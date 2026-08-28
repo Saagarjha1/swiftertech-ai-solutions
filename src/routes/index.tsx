@@ -19,19 +19,100 @@ export const Route = createFileRoute("/")({
   component: Index,
   head: () => ({
     meta: [
-      { title: "Swiftertech Solutions — AI Automations, Web & ERP Solutions in Navi Mumbai" },
+      {
+        title:
+          "Swiftertech Solutions — AI Automations, Web & ERP Solutions in Navi Mumbai",
+      },
       {
         name: "description",
         content:
-          "Swiftertech Solutions builds AI automations, AI & web solutions, and ERP systems for growing businesses. Based in Sanpada, Navi Mumbai. Innovate. Integrate. Elevate.",
+          "Swiftertech Solutions builds AI automations, AI & web solutions, and ERP systems for growing businesses in Sanpada, Navi Mumbai. Call +91 83697 16455 or email swiftertech@zohomail.in.",
+      },
+      {
+        name: "keywords",
+        content:
+          "AI automation Navi Mumbai, web development Navi Mumbai, ERP solutions Mumbai, Swiftertech Solutions, business automation India",
       },
       { property: "og:title", content: "Swiftertech Solutions — AI, Web & ERP Solutions" },
       {
         property: "og:description",
-        content: "AI automations, AI & web solutions, and ERP systems from Navi Mumbai.",
+        content:
+          "AI automations, AI & web solutions, and ERP systems from Navi Mumbai.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "/" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Swiftertech Solutions — AI, Web & ERP Solutions" },
+      {
+        name: "twitter:description",
+        content:
+          "AI automations, AI & web solutions, and ERP systems from Navi Mumbai.",
+      },
+    ],
+    links: [{ rel: "canonical", href: "/" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Swiftertech Solutions",
+          alternateName: "Swiftertech",
+          url: "/",
+          logo: logoAsset.url,
+          description:
+            "Swiftertech Solutions builds AI automations, AI & web solutions, and ERP systems for growing businesses.",
+          slogan: "Innovate • Integrate • Elevate",
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: "Kukreja Classic, Plot No. 2, Sector 16",
+            addressLocality: "Sanpada, Navi Mumbai",
+            postalCode: "400705",
+            addressCountry: "IN",
+          },
+          contactPoint: {
+            "@type": "ContactPoint",
+            telephone: "+91-83697-16455",
+            email: "swiftertech@zohomail.in",
+            contactType: "sales",
+            areaServed: "IN",
+            availableLanguage: ["English", "Hindi"],
+          },
+          hasOfferCatalog: {
+            "@type": "OfferCatalog",
+            name: "Swiftertech Services",
+            itemListElement: [
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "AI Automations",
+                  description:
+                    "Intelligent workflows, chatbots, document processing, and lead qualification.",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "AI & Web Solutions",
+                  description:
+                    "Modern websites, portals, and web applications with AI-powered features.",
+                },
+              },
+              {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "ERP Solutions",
+                  description:
+                    "ERP implementation, customization, integrations, dashboards, and reporting.",
+                },
+              },
+            ],
+          },
+        }),
+      },
     ],
   }),
 });
@@ -253,14 +334,14 @@ function Index() {
               </div>
               <div className="flex items-center gap-3 text-primary-foreground/80">
                 <Mail className="h-5 w-5 shrink-0 text-accent" />
-                <a href="mailto:hello@swiftertech.in" className="transition-colors hover:text-primary-foreground">
-                  hello@swiftertech.in
+                <a href="mailto:swiftertech@zohomail.in" className="transition-colors hover:text-primary-foreground">
+                  swiftertech@zohomail.in
                 </a>
               </div>
               <div className="flex items-center gap-3 text-primary-foreground/80">
                 <Phone className="h-5 w-5 shrink-0 text-accent" />
-                <a href="tel:+912200000000" className="transition-colors hover:text-primary-foreground">
-                  +91 22 0000 0000
+                <a href="tel:+918369716455" className="transition-colors hover:text-primary-foreground">
+                  +91 83697 16455
                 </a>
               </div>
             </div>
